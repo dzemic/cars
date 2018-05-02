@@ -1,0 +1,58 @@
+{
+    "BMW": {
+        "max_speed": 280,
+        "color": "orange",
+        "driver": "BMW_driver"
+    },
+    "SKODA": {
+        "max_speed": 220,
+        "color": "brown",
+        "driver": "SKODA_driver"
+
+    },
+    "AUDI": {
+        "max_speed": 250,
+        "color": "grey",
+        "driver": "AUDI_driver"
+    },
+    "PORSCHE": {
+        "max_speed": 300,
+        "color": "orange",
+        "driver": "PORSCHE_driver"
+    },
+    "VW": {
+        "max_speed": 200,
+        "color": "black",
+        "driver": "VW_driver"
+    },
+    "SEAT": {
+        "max_speed": 150,
+        "color": "green",
+        "driver": "SEAT_driver"
+    },
+    "RENAULT": {
+        "max_speed": 160,
+        "color": "orange",
+        "driver": "RENAULT_driver"
+    },
+    "PONTIAC": {
+        "max_speed": 295,
+        "color": "red",
+        "driver": "PONTIAC_driver"
+    },
+    "BUICK": {
+        "max_speed": 255,
+        "color": "white",
+        "driver": "BUICK_driver"
+    },
+    "CHEVROLET": {
+        "max_speed": 285,
+        "color": "blue",
+        "driver": "CHEVROLET_driver"
+    },
+    "JEEP": {
+        "max_speed": 195,
+        "color": "red",
+        "driver": "JEEP_driver"
+    }
+}
