@@ -29,13 +29,13 @@ class Car():
             self.current_max_speed = max_speed
         current_speed = 0
         other_car = 'all clear'
-        random_error_code = 0
+        logger.info('Welcome to %s driving experiance. You are : %s driver(MAX %skm/h)\n' % (self.driver, self.car, self.max_speed))
         logger.info('Welcome to %s driving experiance. You are : %s driver(MAX %skm/h)\n' % (self.driver, self.car, self.max_speed))
         while True:
             random_error_code = random.randint(0, 100)
             logger.info('%s speeding up : %dkm/h, obsticle: %s' % (self.car, current_speed, other_car))
             time.sleep(1)
-            current_speed = current_speed + 10
+            current_speed = current_speed + 30
 
             if random_error_code > 90:
                 self.car_stop()
