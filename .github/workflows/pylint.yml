@@ -21,4 +21,5 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         #pylint $(git ls-files '*.py')
-        echo check $python-version
+        echo check ${{ matrix.python-version }}
+        touch file_${{ matrix.python-version }}.txt
