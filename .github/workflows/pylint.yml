@@ -23,3 +23,10 @@ jobs:
         #pylint $(git ls-files '*.py')
         echo check ${{ matrix.python-version }}
         touch file_${{ matrix.python-version }}.txt
+    - name: Archive artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: artifacts-output
+        path: |
+          file_*.txt
+          !dist/**/*.md
