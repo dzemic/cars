@@ -12,3 +12,4 @@ jobs:
       - uses: dzemic/cars@master
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          input_1: "!!! test test test !!!"
