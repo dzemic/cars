@@ -1,4 +1,4 @@
-name: Hello Universe
+name: JavaScript
 on:
   push:
     branches: [ main ]
