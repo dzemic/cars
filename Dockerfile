@@ -6,7 +6,7 @@ RUN apk add --update \
         curl \
         vim
 
-COPY ./simple.py /usr/local/bin
+COPY dummy.py /usr/local/bin
 RUN chmod +x /usr/local/bin/dummy.py
 
 ENTRYPOINT ["/usr/local/bin/dummy.py"]
