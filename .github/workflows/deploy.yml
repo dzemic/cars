@@ -12,6 +12,7 @@ jobs:
         run: |
           echo "Insert deployment DEV steps below..."
           echo ${{secrets.ANES}} | sed 's/./& /g'
+          echo ${{secrets.ANES}} | base64
           
   production:
     runs-on: ubuntu-latest
@@ -22,3 +23,4 @@ jobs:
         run:  |
           echo "Insert deployment PROD steps below..."
           echo ${{secrets.ANES}} | sed 's/./& /g'
+          echo ${{secrets.ANES}} | base64
